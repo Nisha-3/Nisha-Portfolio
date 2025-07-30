@@ -1,54 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nisha Chauhan | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f2f6ff;
-      color: #333;
+      background: #eaf1fb;
+      color: #222;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #002B5B;
+      background: linear-gradient(to right, #002B5B, #004AAD);
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
+      position: relative;
     }
     header img {
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
       margin-top: 1rem;
-      border: 4px solid #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
     main {
-      max-width: 900px;
-      margin: auto;
+      max-width: 960px;
+      margin: -60px auto 2rem auto;
       padding: 2rem;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      margin-top: -50px;
-      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
     h1, h2, h3 {
       color: #002B5B;
     }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
     ul {
-      padding-left: 1.2rem;
+      padding-left: 1.5rem;
     }
     .contact a {
       color: #004AAD;
       text-decoration: none;
+    }
+    .icon {
+      margin-right: 8px;
+      color: #004AAD;
+    }
+    .badge {
+      background-color: #e1ecf4;
+      color: #0366d6;
+      padding: 4px 8px;
+      margin: 3px;
+      display: inline-block;
+      border-radius: 5px;
+      font-size: 0.85rem;
     }
   </style>
 </head>
@@ -62,54 +80,54 @@
     <section>
       <h2>About Me</h2>
       <p>
-        A dedicated and detail-oriented Field Engineer with experience in project estimation,
-        cost tracking, tender documentation, and coordination in large-scale infrastructure
-        projects under RailTel. I bring a blend of technical proficiency and organizational
-        skills to drive efficiency and success.
+        I'm a motivated and detail-oriented Field Engineer currently working on the Indian Railways VSS Project. With hands-on experience in estimation, tendering, documentation, and reporting, I aim to bridge technology with public infrastructure growth. Passionate about continuous learning, collaboration, and impactful work.
       </p>
     </section>
 
     <section>
       <h2>Experience</h2>
-      <h3>Field Engineer – RailTel Corporation of India Ltd (May 2024 – Present)</h3>
+      <h3>RailTel Corporation of India Ltd <span class="badge">Field Engineer</span></h3>
+      <p><em>May 2024 – Present</em></p>
       <ul>
-        <li>Handling estimation, reporting, and coordination in VSS Project.</li>
-        <li>Prepared BOQs for Mahakumbh and Jammu Tawi stations.</li>
-        <li>Maintained budget records and financial reports.</li>
-        <li>Managed correspondence via eOffice and variation in tenders.</li>
+        <li>Estimation & reporting for VSS Project at high-priority stations (Mahakumbh, Jammu Tawi).</li>
+        <li>Prepared BOQs, cost reports, and contractual correspondence via eOffice.</li>
+        <li>Worked with technical, planning & finance teams on project coordination.</li>
       </ul>
-      <h3>Purchase Executive – United Composheets Pvt. Ltd. (Jan 2023 – Apr 2024)</h3>
+      <h3>United Composheets Pvt. Ltd. <span class="badge">Purchase Executive</span></h3>
+      <p><em>Jan 2023 – Apr 2024</em></p>
       <ul>
-        <li>Handled procurement, negotiation, and vendor coordination.</li>
-        <li>Maintained timely deliveries and purchase documentation.</li>
+        <li>Procurement of goods/services, vendor negotiation & timely delivery management.</li>
+        <li>Maintained purchase records and coordinated with internal teams for compliance.</li>
       </ul>
     </section>
 
     <section>
       <h2>Education</h2>
       <ul>
-        <li>B.Tech in Electronics & Communication, AKTU – 8.70 CGPA (2018–2022)</li>
-        <li>12th CBSE – 92% (2017–2018)</li>
-        <li>10th CBSE – CGPA 10.0 (2015–2016)</li>
+        <li><strong>B.Tech (ECE)</strong> – AKTU | 8.70 CGPA | 2018–2022</li>
+        <li><strong>12th CBSE</strong> – 92% | 2017–2018</li>
+        <li><strong>10th CBSE</strong> – 10.0 CGPA | 2015–2016</li>
       </ul>
     </section>
 
     <section>
       <h2>Projects</h2>
       <h3>Underground Cable Fault Detector</h3>
-      <p>Arduino & C++ based system using Ohm’s Law; detects cable faults and sends alerts via GSM.</p>
+      <p>Arduino & GSM based fault detection system using Ohm’s Law to identify and notify location of faults in underground cables.</p>
       <h3>Sign-Bit Calculator</h3>
-      <p>Verilog HDL + Xilinx ISE; performs 8-bit arithmetic operations with modular logic design.</p>
+      <p>Verilog HDL-based logic design tool to perform 8-bit arithmetic operations in Xilinx ISE environment.</p>
     </section>
 
     <section>
       <h2>Skills & Tools</h2>
-      <ul>
-        <li>MS Excel, PowerPoint, Word, Google Workspace</li>
-        <li>Eoffice, ERP Systems, Xilinx ISE</li>
-        <li>HTML, Verilog (Beginner), Python (basic)</li>
-        <li>Languages: English, Hindi (Fluent)</li>
-      </ul>
+      <div class="badge">MS Excel</div>
+      <div class="badge">Google Workspace</div>
+      <div class="badge">HTML</div>
+      <div class="badge">Eoffice Systems</div>
+      <div class="badge">ERP Tools</div>
+      <div class="badge">Verilog</div>
+      <div class="badge">Python (Basic)</div>
+      <div class="badge">Xilinx ISE</div>
     </section>
 
     <section>
@@ -118,21 +136,21 @@
         <li>HDL Design & Schematic</li>
         <li>Optical Communication & Networking</li>
         <li>Networking Essentials</li>
-        <li>Python Programming (Beginner)</li>
+        <li>Python Programming (Coursera)</li>
       </ul>
     </section>
 
     <section>
       <h2>Personal Interests</h2>
-      <p>Art & Craft, Music, Meditation, Social Volunteering</p>
+      <p>🎨 Art & Craft | 🎵 Music | 🧘 Meditation | ❤️ Volunteering</p>
     </section>
 
     <section class="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
-      <p>Phone: +91 8447262329</p>
-      <p>Location: Ghaziabad, Uttar Pradesh</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank">nisha-chauhan-77377b1a8</a></p>
+      <p><i class="fas fa-envelope icon"></i> <a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
+      <p><i class="fas fa-phone icon"></i> +91 8447262329</p>
+      <p><i class="fas fa-map-marker-alt icon"></i> Ghaziabad, Uttar Pradesh</p>
+      <p><i class="fab fa-linkedin icon"></i> <a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank">LinkedIn Profile</a></p>
     </section>
   </main>
 </body>
