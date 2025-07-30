@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nisha Chauhan | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -20,6 +21,7 @@
       padding: 2.5rem 1rem 1.5rem;
       border-bottom: 2px solid #dde6f1;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      animation: fadeInDown 1s ease-in-out;
     }
     header img {
       border-radius: 50%;
@@ -39,15 +41,21 @@
       color: #004AAD;
     }
     main {
-      max-width: 960px;
+      max-width: 1100px;
       margin: 1rem auto 2rem auto;
       padding: 2rem;
       background: #fff;
       box-shadow: 0 0 12px rgba(0,0,0,0.08);
       border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
     }
     section {
-      margin-bottom: 2.5rem;
+      flex: 1 1 45%;
+      min-width: 300px;
+      animation: fadeInUp 1s ease-in-out;
+      text-align: justify;
     }
     h2 {
       border-bottom: 2px solid #e1eaf2;
@@ -80,6 +88,14 @@
       font-size: 0.85rem;
       font-weight: 500;
       box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInDown {
+      0% {opacity: 0; transform: translateY(-20px);}
+      100% {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
@@ -117,9 +133,9 @@
     <section>
       <h2>Education</h2>
       <ul>
-        <li><strong>B.Tech (ECE)</strong> – AKTU | 8.70 CGPA | 2018–2022</li>
-        <li><strong>12th CBSE</strong> – 92% | 2017–2018</li>
-        <li><strong>10th CBSE</strong> – 10.0 CGPA | 2015–2016</li>
+        <li><strong>B.Tech (ECE)</strong> – Inderprastha Engineering College, AKTU | 8.70 CGPA | 2018–2022</li>
+        <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92% | 2017–2018</li>
+        <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 10.0 CGPA | 2015–2016</li>
       </ul>
     </section>
 
