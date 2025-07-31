@@ -1,186 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nisha Chauhan | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f0f4fa;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #ffffff;
-      color: #002B5B;
-      text-align: center;
-      padding: 2.5rem 1rem 1.5rem;
-      border-bottom: 2px solid #dde6f1;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      animation: fadeInDown 1s ease-in-out;
-    }
-    header img {
-      border-radius: 50%;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      margin-top: 0.5rem;
-      border: 4px solid #002B5B;
-    }
-    header h1 {
-      margin: 1rem 0 0.3rem;
-      font-size: 2.2rem;
-      color: #002B5B;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #004AAD;
-    }
-    main {
-      max-width: 1100px;
-      margin: 1rem auto 2rem auto;
-      padding: 2rem;
-      background: #fff;
-      box-shadow: 0 0 12px rgba(0,0,0,0.08);
-      border-radius: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    section {
-      flex: 1 1 45%;
-      min-width: 300px;
-      animation: fadeInUp 1s ease-in-out;
-      text-align: justify;
-    }
-    h2 {
-      border-bottom: 2px solid #e1eaf2;
-      padding-bottom: 0.4rem;
-      margin-bottom: 1rem;
-      color: #004AAD;
-    }
-    h3 {
-      color: #002B5B;
-      margin-top: 1.2rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .contact a {
-      color: #004AAD;
-      text-decoration: none;
-    }
-    .icon {
-      margin-right: 8px;
-      color: #004AAD;
-    }
-    .badge {
-      background-color: #edf4ff;
-      color: #003366;
-      padding: 6px 12px;
-      margin: 5px 4px;
-      display: inline-block;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-    }
-    @keyframes fadeInUp {
-      0% {opacity: 0; transform: translateY(20px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
-    @keyframes fadeInDown {
-      0% {opacity: 0; transform: translateY(-20px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family:'Poppins',sans-serif; background:#f4f8fb; color:#333; line-height:1.6; }
+    header { background:#002B5B; color:#fff; text-align:center; padding:4rem 1rem; animation: fadeDown 1s ease; }
+    header img { width:150px; height:150px; border-radius:50%; border:4px solid #fff; margin:0 auto 1rem; display:block; }
+    header h1 { font-size:3rem; margin-bottom:0.5rem; }
+    header p { font-size:1.2rem; max-width:600px; margin:0 auto; }
+    main { max-width:1000px; margin:2rem auto; padding:0 1rem; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:2rem; }
+    section { background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); animation: fadeUp 0.8s ease both; }
+    h2 { margin-bottom:1rem; color:#004AAD; border-bottom:2px solid #e1eaf2; padding-bottom:0.5rem; }
+    h3 { color:#002B5B; margin-top:1rem; }
+    p, ul { text-align:justify; }
+    ul { padding-left:1.2rem; }
+    .badge { display:inline-block; background:#edf4ff; color:#003366; padding:5px 10px; border-radius:20px; font-size:0.9rem; margin:3px 4px; }
+    .contact p { margin:0.5rem 0; }
+    .contact i { color:#004AAD; margin-right:8px; }
+    @keyframes fadeDown { from { opacity:0; transform: translateY(-30px);} to {opacity:1; transform: translateY(0);} }
+    @keyframes fadeUp { from {opacity:0; transform: translateY(30px);} to {opacity:1; transform: translateY(0);} }
+    @media(max-width:768px){ .grid{grid-template-columns:1fr;} }
   </style>
 </head>
 <body>
+
   <header>
     <img src="nisha_photo.jpg" alt="Nisha Chauhan">
     <h1>Nisha Chauhan</h1>
-    <p>Field Engineer | Project Estimation | VSS Expert | ECE Graduate</p>
+    <p>Field Engineer specializing in project estimation, cost analysis, and technical coordination for public infrastructure projects.</p>
   </header>
+
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I'm a motivated and detail-oriented Field Engineer currently working on the Indian Railways VSS Project. With hands-on experience in estimation, tendering, documentation, and reporting, I aim to bridge technology with public infrastructure growth. Passionate about continuous learning, collaboration, and impactful work.
-      </p>
-    </section>
 
-    <section>
-      <h2>Experience</h2>
-      <h3>RailTel Corporation of India Ltd <span class="badge">Field Engineer</span></h3>
-      <p><em>May 2024 – Present</em></p>
-      <ul>
-        <li>Estimation & reporting for VSS Project at high-priority stations (Mahakumbh, Jammu Tawi).</li>
-        <li>Prepared BOQs, cost reports, and contractual correspondence via eOffice.</li>
-        <li>Worked with technical, planning & finance teams on project coordination.</li>
-      </ul>
-      <h3>United Composheets Pvt. Ltd. <span class="badge">Purchase Executive</span></h3>
-      <p><em>Jan 2023 – Apr 2024</em></p>
-      <ul>
-        <li>Procurement of goods/services, vendor negotiation & timely delivery management.</li>
-        <li>Maintained purchase records and coordinated with internal teams for compliance.</li>
-      </ul>
-    </section>
+    <div class="grid">
+      <section>
+        <h2>About Me</h2>
+        <p>I am a dedicated Field Engineer at RailTel working on VSS projects like Mahakumbh & Jammu Tawi stations. With expertise in cost estimation, BOQ preparation, and financial reporting, I collaborate across technical and finance teams to deliver high-quality infrastructure solutions.</p>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.Tech (ECE)</strong> – Inderprastha Engineering College, AKTU | 8.70 CGPA | 2018–2022</li>
-        <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92% | 2017–2018</li>
-        <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 10.0 CGPA | 2015–2016</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Experience</h2>
+        <h3>RailTel Corporation of India Ltd <span class="badge">Field Engineer</span></h3>
+        <p><em>May 2024 – Present</em></p>
+        <ul>
+          <li>Managed estimation & reporting for key stations (Mahakumbh, Jammu Tawi).</li>
+          <li>Prepared BOQs, cost tracking, and tender documentation.</li>
+          <li>Coordinated with internal teams using eOffice and ERP tools.</li>
+        </ul>
+        <h3>United Composheets Pvt. Ltd. <span class="badge">Purchase Executive</span></h3>
+        <p><em>Jan 2023 – Apr 2024</em></p>
+        <ul>
+          <li>Handled procurement, vendor negotiations, and order tracking.</li>
+          <li>Maintained compliance documentation and delivery schedules.</li>
+        </ul>
+      </section>
+    </div>
 
-    <section>
-      <h2>Projects</h2>
-      <h3>Underground Cable Fault Detector</h3>
-      <p>Arduino & GSM based fault detection system using Ohm’s Law to identify and notify location of faults in underground cables.</p>
-      <h3>Sign-Bit Calculator</h3>
-      <p>Verilog HDL-based logic design tool to perform 8-bit arithmetic operations in Xilinx ISE environment.</p>
-    </section>
+    <div class="grid">
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.Tech</strong> – Electronics & Communication Engineering, Inderprastha Engineering College, AKTU | CGPA: 8.70 (2018–2022)</li>
+          <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92% (2017–2018)</li>
+          <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | CGPA: 10.0 (2015–2016)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Skills & Tools</h2>
-      <div class="badge">MS Excel</div>
-      <div class="badge">Google Workspace</div>
-      <div class="badge">HTML</div>
-      <div class="badge">Eoffice Systems</div>
-      <div class="badge">ERP Tools</div>
-      <div class="badge">Verilog</div>
-      <div class="badge">Python (Basic)</div>
-      <div class="badge">Xilinx ISE</div>
-    </section>
+      <section>
+        <h2>Skills</h2>
+        <div class="badge">MS Excel</div>
+        <div class="badge">Google Workspace</div>
+        <div class="badge">HTML</div>
+        <div class="badge">Eoffice</div>
+        <div class="badge">ERP</div>
+        <div class="badge">Verilog</div>
+        <div class="badge">Python (Basic)</div>
+        <div class="badge">Xilinx ISE</div>
+      </section>
+    </div>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>HDL Design & Schematic</li>
-        <li>Optical Communication & Networking</li>
-        <li>Networking Essentials</li>
-        <li>Python Programming (Coursera)</li>
-      </ul>
-    </section>
+    <div class="grid">
+      <section>
+        <h2>Projects</h2>
+        <h3>Underground Cable Fault Detector</h3>
+        <p>Arduino & GSM-based system that detects and reports underground cable faults using Ohm’s Law principles.</p>
+        <h3>Sign‑Bit Calculator</h3>
+        <p>Designed in Verilog HDL on Xilinx ISE, implemented arithmetic operations using modular logic for educational use.</p>
+      </section>
 
-    <section>
-      <h2>Personal Interests</h2>
-      <p>🎨 Art & Craft | 🎵 Music | 🧘 Meditation | ❤️ Volunteering</p>
-    </section>
+      <section class="contact">
+        <h2>Contact</h2>
+        <p><i class="fas fa-envelope"></i><a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i>+91 8447262329</p>
+        <p><i class="fas fa-map-marker-alt"></i>Ghaziabad, Uttar Pradesh</p>
+        <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank"> LinkedIn</a></p>
+      </section>
+    </div>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p><i class="fas fa-envelope icon"></i> <a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
-      <p><i class="fas fa-phone icon"></i> +91 8447262329</p>
-      <p><i class="fas fa-map-marker-alt icon"></i> Ghaziabad, Uttar Pradesh</p>
-      <p><i class="fab fa-linkedin icon"></i> <a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank">LinkedIn Profile</a></p>
-    </section>
   </main>
 </body>
 </html>
