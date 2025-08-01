@@ -1,143 +1,63 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nisha Chauhan | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nisha Chauhan | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin:0; padding:0; }
-    body { font-family:'Poppins',sans-serif; background:#f4f8fb; color:#333; line-height:1.6; }
-    nav {
-      background: #002B5B;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    header {
-      background:#ffffff;
-      color:#002B5B;
-      text-align:center;
-      padding:4rem 1rem;
-      animation: fadeDown 1s ease;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    header img {
-      width:150px; height:150px; border-radius:50%; border:4px solid #002B5B;
-      margin:0 auto 1rem; display:block;
-    }
-    header h1 { font-size:2.8rem; margin-bottom:0.5rem; }
-    header p { font-size:1.1rem; max-width:600px; margin:0 auto; }
-    main {
-      max-width:800px;
-      margin:2rem auto;
-      padding:0 1rem;
-    }
-    section {
-      background:#fff;
-      padding:1.5rem;
-      border-radius:8px;
-      box-shadow:0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-      animation: fadeUp 0.8s ease both;
-      text-align: justify;
-    }
-    h2 {
-      margin-bottom:1rem;
-      color:#004AAD;
-      border-bottom:2px solid #e1eaf2;
-      padding-bottom:0.5rem;
-    }
-    h3 { color:#002B5B; margin-top:1rem; }
-    ul { padding-left:1.2rem; }
-    .badge {
-      display:inline-block;
-      background:#edf4ff;
-      color:#003366;
-      padding:5px 10px;
-      border-radius:20px;
-      font-size:0.9rem;
-      margin:3px 4px;
-    }
-    .contact p { margin:0.5rem 0; }
-    .contact i { color:#004AAD; margin-right:8px; }
-    a { color: #004AAD; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    @keyframes fadeDown {
-      from { opacity:0; transform: translateY(-30px);}
-      to {opacity:1; transform: translateY(0);}
-    }
-    @keyframes fadeUp {
-      from {opacity:0; transform: translateY(30px);}
-      to {opacity:1; transform: translateY(0);}
-    }
-
-    @media(max-width:600px){
-      header h1 { font-size:2rem; }
-      nav a { display: block; margin: 0.5rem 0; }
-    }
+    body { font-family: 'Poppins', sans-serif; background: #f4f8fb; margin: 0; padding: 0; color: #333; }
+    nav { background: #002B5B; padding: 1rem; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+    header { text-align: center; padding: 4rem 1rem; background: white; }
+    header img { width: 150px; border-radius: 50%; border: 3px solid #002B5B; }
+    header h1 { margin-top: 1rem; color: #002B5B; }
+    header p { max-width: 600px; margin: 0 auto; }
+    .download-btn { margin-top: 1.5rem; display: inline-block; padding: 0.6rem 1rem; background: #004AAD; color: #fff; border-radius: 5px; text-decoration: none; }
   </style>
 </head>
 <body>
-
   <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
   </nav>
-
   <header>
     <img src="nisha_photo.jpg" alt="Nisha Chauhan">
     <h1>Nisha Chauhan</h1>
     <p>Field Engineer specializing in project estimation, cost analysis, and technical coordination for public infrastructure projects.</p>
+    <a class="download-btn" href="resume.pdf" target="_blank">Download Resume</a>
   </header>
+</body>
+</html>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a dedicated Field Engineer at RailTel working on public infrastructure projects. With expertise in estimation, BOQ preparation, and financial reporting, I collaborate with technical and finance teams to deliver effective solutions.</p>
-    </section>
+<!-- experience.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience | Nisha Chauhan</title><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>body{font-family:'Poppins',sans-serif;background:#f4f8fb;color:#333;margin:0;padding:0}nav{background:#002B5B;padding:1rem;text-align:center}nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:500}nav a:hover{text-decoration:underline}main{max-width:800px;margin:2rem auto;padding:0 1rem;background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);text-align:justify}h2{color:#004AAD;margin-top:0}</style></head>
+<body><nav><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="education.html">Education</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="certifications.html">Certifications</a><a href="contact.html">Contact</a></nav>
+<main><h2>Experience</h2>
+<h3>RailTel Corporation of India Ltd – Field Engineer</h3><p><em>May 2024 – Present</em></p><ul><li>Managed estimation & reporting for key stations (Mahakumbh, Jammu Tawi).</li><li>Prepared BOQs, cost tracking, and tender documentation.</li><li>Coordinated with internal teams using eOffice and ERP tools.</li></ul>
+<h3>United Composheets Pvt. Ltd. – Purchase Executive</h3><p><em>Jan 2023 – Apr 2024</em></p><ul><li>Handled procurement, vendor negotiations, and order tracking.</li><li>Maintained compliance documentation and delivery schedules.</li></ul>
+</main></body></html>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <h3>RailTel Corporation of India Ltd <span class="badge">Field Engineer</span></h3>
-      <p><em>May 2024 – Present</em></p>
-      <ul>
-        <li>Managed estimation & reporting for key stations (Mahakumbh, Jammu Tawi).</li>
-        <li>Prepared BOQs, cost tracking, and tender documentation.</li>
-        <li>Coordinated with internal teams using eOffice and ERP tools.</li>
-      </ul>
-      <h3>United Composheets Pvt. Ltd. <span class="badge">Purchase Executive</span></h3>
-      <p><em>Jan 2023 – Apr 2024</em></p>
-      <ul>
-        <li>Handled procurement, vendor negotiations, and order tracking.</li>
-        <li>Maintained compliance documentation and delivery schedules.</li>
-      </ul>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.Tech</strong> – Electronics & Communication Engineering, Inderprastha Engineering College, AKTU | CGPA: 8.70 (2018–2022)</li>
-        <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92% (2017–2018)</li>
-        <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | CGPA: 10.0 (2015–2016)</li>
-      </ul>
-    </section>
-
-    <section id="skills">
+<!-- education.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education | Nisha Chauhan</title><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>body{font-family:'Poppins',sans-serif;background:#f4f8fb;color:#333;margin:0;padding:0}nav{background:#002B5B;padding:1rem;text-align:center}nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:500}nav a:hover{text-decoration:underline}main{max-width:800px;margin:2rem auto;padding:0 1rem;background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);text-align:justify}h2{color:#004AAD;margin-top:0}</style></head>
+<body><nav><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="education.html">Education</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="certifications.html">Certifications</a><a href="contact.html">Contact</a></nav>
+<main><h2>Education</h2><ul><li><strong>B.Tech</strong> – Electronics & Communication Engineering, Inderprastha Engineering College, AKTU | CGPA: 8.70 (2018–2022)</li><li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92%</li><li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | CGPA: 10.0</li></ul>
+</main></body></html>
       <h2>Skills</h2>
       <div class="badge">MS Excel</div>
       <div class="badge">Google Workspace</div>
