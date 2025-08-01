@@ -8,26 +8,96 @@
   <style>
     * { box-sizing: border-box; margin:0; padding:0; }
     body { font-family:'Poppins',sans-serif; background:#f4f8fb; color:#333; line-height:1.6; }
-    header { background:#002B5B; color:#fff; text-align:center; padding:4rem 1rem; animation: fadeDown 1s ease; }
-    header img { width:150px; height:150px; border-radius:50%; border:4px solid #fff; margin:0 auto 1rem; display:block; }
-    header h1 { font-size:3rem; margin-bottom:0.5rem; }
-    header p { font-size:1.2rem; max-width:600px; margin:0 auto; }
-    main { max-width:1000px; margin:2rem auto; padding:0 1rem; }
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:2rem; }
-    section { background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); animation: fadeUp 0.8s ease both; }
-    h2 { margin-bottom:1rem; color:#004AAD; border-bottom:2px solid #e1eaf2; padding-bottom:0.5rem; }
+    nav {
+      background: #002B5B;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background:#ffffff;
+      color:#002B5B;
+      text-align:center;
+      padding:4rem 1rem;
+      animation: fadeDown 1s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header img {
+      width:150px; height:150px; border-radius:50%; border:4px solid #002B5B;
+      margin:0 auto 1rem; display:block;
+    }
+    header h1 { font-size:2.8rem; margin-bottom:0.5rem; }
+    header p { font-size:1.1rem; max-width:600px; margin:0 auto; }
+    main {
+      max-width:800px;
+      margin:2rem auto;
+      padding:0 1rem;
+    }
+    section {
+      background:#fff;
+      padding:1.5rem;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      animation: fadeUp 0.8s ease both;
+      text-align: justify;
+    }
+    h2 {
+      margin-bottom:1rem;
+      color:#004AAD;
+      border-bottom:2px solid #e1eaf2;
+      padding-bottom:0.5rem;
+    }
     h3 { color:#002B5B; margin-top:1rem; }
-    p, ul { text-align:justify; }
     ul { padding-left:1.2rem; }
-    .badge { display:inline-block; background:#edf4ff; color:#003366; padding:5px 10px; border-radius:20px; font-size:0.9rem; margin:3px 4px; }
+    .badge {
+      display:inline-block;
+      background:#edf4ff;
+      color:#003366;
+      padding:5px 10px;
+      border-radius:20px;
+      font-size:0.9rem;
+      margin:3px 4px;
+    }
     .contact p { margin:0.5rem 0; }
     .contact i { color:#004AAD; margin-right:8px; }
-    @keyframes fadeDown { from { opacity:0; transform: translateY(-30px);} to {opacity:1; transform: translateY(0);} }
-    @keyframes fadeUp { from {opacity:0; transform: translateY(30px);} to {opacity:1; transform: translateY(0);} }
-    @media(max-width:768px){ .grid{grid-template-columns:1fr;} }
+    a { color: #004AAD; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @keyframes fadeDown {
+      from { opacity:0; transform: translateY(-30px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    @keyframes fadeUp {
+      from {opacity:0; transform: translateY(30px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+
+    @media(max-width:600px){
+      header h1 { font-size:2rem; }
+      nav a { display: block; margin: 0.5rem 0; }
+    }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <header>
     <img src="nisha_photo.jpg" alt="Nisha Chauhan">
@@ -36,72 +106,72 @@
   </header>
 
   <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a dedicated Field Engineer at RailTel working on public infrastructure projects. With expertise in estimation, BOQ preparation, and financial reporting, I collaborate with technical and finance teams to deliver effective solutions.</p>
+    </section>
 
-    <div class="grid">
-      <section>
-        <h2>About Me</h2>
-        <p>I am a dedicated Field Engineer at RailTel working on VSS projects like Mahakumbh & Jammu Tawi stations. With expertise in cost estimation, BOQ preparation, and financial reporting, I collaborate across technical and finance teams to deliver high-quality infrastructure solutions.</p>
-      </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>RailTel Corporation of India Ltd <span class="badge">Field Engineer</span></h3>
+      <p><em>May 2024 – Present</em></p>
+      <ul>
+        <li>Managed estimation & reporting for key stations (Mahakumbh, Jammu Tawi).</li>
+        <li>Prepared BOQs, cost tracking, and tender documentation.</li>
+        <li>Coordinated with internal teams using eOffice and ERP tools.</li>
+      </ul>
+      <h3>United Composheets Pvt. Ltd. <span class="badge">Purchase Executive</span></h3>
+      <p><em>Jan 2023 – Apr 2024</em></p>
+      <ul>
+        <li>Handled procurement, vendor negotiations, and order tracking.</li>
+        <li>Maintained compliance documentation and delivery schedules.</li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Experience</h2>
-        <h3>RailTel Corporation of India Ltd <span class="badge">Field Engineer</span></h3>
-        <p><em>May 2024 – Present</em></p>
-        <ul>
-          <li>Managed estimation & reporting for key stations (Mahakumbh, Jammu Tawi).</li>
-          <li>Prepared BOQs, cost tracking, and tender documentation.</li>
-          <li>Coordinated with internal teams using eOffice and ERP tools.</li>
-        </ul>
-        <h3>United Composheets Pvt. Ltd. <span class="badge">Purchase Executive</span></h3>
-        <p><em>Jan 2023 – Apr 2024</em></p>
-        <ul>
-          <li>Handled procurement, vendor negotiations, and order tracking.</li>
-          <li>Maintained compliance documentation and delivery schedules.</li>
-        </ul>
-      </section>
-    </div>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech</strong> – Electronics & Communication Engineering, Inderprastha Engineering College, AKTU | CGPA: 8.70 (2018–2022)</li>
+        <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92% (2017–2018)</li>
+        <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | CGPA: 10.0 (2015–2016)</li>
+      </ul>
+    </section>
 
-    <div class="grid">
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li><strong>B.Tech</strong> – Electronics & Communication Engineering, Inderprastha Engineering College, AKTU | CGPA: 8.70 (2018–2022)</li>
-          <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92% (2017–2018)</li>
-          <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | CGPA: 10.0 (2015–2016)</li>
-        </ul>
-      </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="badge">MS Excel</div>
+      <div class="badge">Google Workspace</div>
+      <div class="badge">HTML</div>
+      <div class="badge">Eoffice</div>
+      <div class="badge">ERP</div>
+      <div class="badge">Verilog</div>
+      <div class="badge">Python (Basic)</div>
+      <div class="badge">Xilinx ISE</div>
+    </section>
 
-      <section>
-        <h2>Skills</h2>
-        <div class="badge">MS Excel</div>
-        <div class="badge">Google Workspace</div>
-        <div class="badge">HTML</div>
-        <div class="badge">Eoffice</div>
-        <div class="badge">ERP</div>
-        <div class="badge">Verilog</div>
-        <div class="badge">Python (Basic)</div>
-        <div class="badge">Xilinx ISE</div>
-      </section>
-    </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <h3>Underground Cable Fault Detector</h3>
+      <p>Arduino & GSM-based system that detects and reports underground cable faults using Ohm’s Law principles.</p>
+      <h3>Sign‑Bit Calculator</h3>
+      <p>Designed in Verilog HDL on Xilinx ISE, implemented arithmetic operations using modular logic for educational use.</p>
+    </section>
 
-    <div class="grid">
-      <section>
-        <h2>Projects</h2>
-        <h3>Underground Cable Fault Detector</h3>
-        <p>Arduino & GSM-based system that detects and reports underground cable faults using Ohm’s Law principles.</p>
-        <h3>Sign‑Bit Calculator</h3>
-        <p>Designed in Verilog HDL on Xilinx ISE, implemented arithmetic operations using modular logic for educational use.</p>
-      </section>
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li><a href="https://www.credly.com/badges/9df6cbcd-7720-4ceb-9c68-daaef68623b4?source=linked_in_profile" target="_blank">Microsoft Certified: Azure Fundamentals</a></li>
+        <li><a href="Certificate of Attendance (52)_NISHA.pdf" target="_blank">Certificate: HDL & Schematic Design – PinE Training Academy</a> (94.55%)</li>
+      </ul>
+    </section>
 
-      <section class="contact">
-        <h2>Contact</h2>
-        <p><i class="fas fa-envelope"></i><a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
-        <p><i class="fas fa-phone"></i>+91 8447262329</p>
-        <p><i class="fas fa-map-marker-alt"></i>Ghaziabad, Uttar Pradesh</p>
-        <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank"> LinkedIn</a></p>
-      </section>
-    </div>
-
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i><a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i>+91 8447262329</p>
+      <p><i class="fas fa-map-marker-alt"></i>Ghaziabad, Uttar Pradesh</p>
+      <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank"> LinkedIn</a></p>
+    </section>
   </main>
 </body>
 </html>
