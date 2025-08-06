@@ -1,40 +1,203 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nisha Chauhan | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Nisha Chauhan | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body { font-family: 'Poppins', sans-serif; background: #f4f8fb; margin: 0; padding: 0; color: #333; }
-    nav { background: #002B5B; padding: 1rem; text-align: center; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500; }
-    nav a:hover { text-decoration: underline; }
-    header { text-align: center; padding: 4rem 1rem; background: white; }
-    header img { width: 150px; border-radius: 50%; border: 3px solid #002B5B; }
-    header h1 { margin-top: 1rem; color: #002B5B; }
-    header p { max-width: 600px; margin: 0 auto; }
-    .download-btn { margin-top: 1.5rem; display: inline-block; padding: 0.6rem 1rem; background: #004AAD; color: #fff; border-radius: 5px; text-decoration: none; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Times New Roman', serif;
+      background: #f8f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background: #002B5B;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #002B5B;
+    }
+    header h1 {
+      margin-top: 1rem;
+      color: #002B5B;
+    }
+    header p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: justify;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+    h2 {
+      color: #004AAD;
+      border-bottom: 2px solid #e1eaf2;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .badge {
+      background: #edf4ff;
+      color: #003366;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin: 3px;
+      display: inline-block;
+    }
+    .contact p {
+      margin: 0.5rem 0;
+    }
+    .contact i {
+      color: #004AAD;
+      margin-right: 8px;
+    }
+    a {
+      color: #004AAD;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    @keyframes slideUp { from {transform: translateY(30px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+    @keyframes zoomIn { from {transform: scale(0.95); opacity: 0;} to {transform: scale(1); opacity: 1;} }
+    @keyframes fadeLeft { from {transform: translateX(-30px); opacity: 0;} to {transform: translateX(0); opacity: 1;} }
+    @keyframes fadeRight { from {transform: translateX(30px); opacity: 0;} to {transform: translateX(0); opacity: 1;} }
+
+    .about { animation-name: fadeIn; }
+    .experience { animation-name: slideUp; }
+    .education { animation-name: zoomIn; }
+    .skills { animation-name: fadeLeft; }
+    .projects { animation-name: fadeRight; }
+    .certifications { animation-name: zoomIn; }
+    .contact { animation-name: fadeIn; }
+
+    @media screen and (max-width: 768px) {
+      section {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="experience.html">Experience</a>
-    <a href="education.html">Education</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="certifications.html">Certifications</a>
-    <a href="contact.html">Contact</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
   </nav>
+
   <header>
     <img src="nisha_photo.jpg" alt="Nisha Chauhan">
     <h1>Nisha Chauhan</h1>
-    <p>Field Engineer specializing in project estimation, cost analysis, and technical coordination for public infrastructure projects.</p>
-    <a class="download-btn" href="resume.pdf" target="_blank">Download Resume</a>
+    <p>Field Engineer specializing in project estimation, BOQ preparation, and interdepartmental coordination.</p>
   </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated Field Engineer at RailTel currently working on Indian Railways' VSS project. I specialize in estimation, documentation, tender preparation, and technical coordination between departments.</p>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>Experience</h2>
+    <h3>RailTel Corporation of India Ltd – Field Engineer</h3>
+    <p><em>May 2024 – Present</em></p>
+    <ul>
+      <li>Handled estimation & reporting for key stations (Mahakumbh, Jammu Tawi).</li>
+      <li>Prepared BOQs, cost tracking, and tender documentation.</li>
+      <li>Coordinated with technical, finance, and planning teams using ERP tools and eOffice.</li>
+    </ul>
+    <h3>United Composheets Pvt. Ltd. – Purchase Executive</h3>
+    <p><em>Jan 2023 – Apr 2024</em></p>
+    <ul>
+      <li>Managed procurement operations, vendor negotiations, and documentation.</li>
+      <li>Coordinated with internal teams ensuring timely delivery and compliance.</li>
+    </ul>
+  </section>
+
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech (ECE)</strong> – Inderprastha Engineering College, AKTU | CGPA: 8.70 | 2018–2022</li>
+      <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92%</li>
+      <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | CGPA: 10.0</li>
+    </ul>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="badge">MS Excel</div>
+    <div class="badge">Google Workspace</div>
+    <div class="badge">HTML</div>
+    <div class="badge">Eoffice</div>
+    <div class="badge">ERP</div>
+    <div class="badge">Verilog</div>
+    <div class="badge">Python (Basic)</div>
+    <div class="badge">Xilinx ISE</div>
+    <div class="badge">Familiar with AI tools</div>
+    <div class="badge">Good at promoting</div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <h3>Underground Cable Fault Detector</h3>
+    <p>Arduino & GSM-based fault detection system using Ohm’s Law to identify and notify underground cable faults.</p>
+    <h3>Sign-Bit Calculator</h3>
+    <p>Verilog HDL project to perform 8-bit arithmetic operations on Xilinx ISE.</p>
+  </section>
+
+  <section class="certifications" id="certifications">
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li><a href="Certificate of Attendance (52)_NISHA.pdf" target="_blank">HDL & Schematic Design – PinE Training Academy</a></li>
+      <li><a href="Certification in Networking Essentials .pdf" target="_blank">Networking Essentials – Cisco Networking Academy</a></li>
+      <li><a href="Skill Enhancement Program.pdf" target="_blank">Skill Enhancement Program – Digital System Design</a></li>
+      <li><a href="Paper Presentation.pdf" target="_blank">Paper Presentation – Flexible & Organic Electronics</a></li>
+      <li><a href="https://www.credly.com/badges/9df6cbcd-7720-4ceb-9c68-daaef68623b4" target="_blank">Microsoft Azure Fundamentals (Credly)</a></li>
+      <li><a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd0997567858" target="_blank">AI Tools Workshop – CertX</a></li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i> +91 8447262329</p>
+    <p><i class="fas fa-map-marker-alt"></i> Ghaziabad, Uttar Pradesh</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank">LinkedIn Profile</a></p>
+  </section>
 </body>
 </html>
-
-
