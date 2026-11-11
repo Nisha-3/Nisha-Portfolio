@@ -1,201 +1,1053 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nisha Chauhan | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Professional portfolio of Nisha Chauhan, Field Engineer specializing in project coordination, estimation, BOQ preparation and technical documentation.">
+  <title>Nisha Chauhan | Professional Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #102b4e;
+      --blue: #1d4e89;
+      --gold: #c59d5f;
+      --light: #f4f7fb;
+      --white: #ffffff;
+      --text: #344054;
+      --muted: #68778b;
+      --border: #e5eaf1;
+      --shadow: 0 12px 35px rgba(16, 43, 78, 0.07);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'Times New Roman', serif;
-      background: #f8f9fb;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
     }
-    nav {
-      background: #002B5B;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: white;
-      animation: fadeIn 1s ease-in-out;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid #002B5B;
-    }
-    header h1 {
-      margin-top: 1rem;
-      color: #002B5B;
-    }
-    header p {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: justify;
-      animation-duration: 1s;
-      animation-fill-mode: both;
-    }
-    h2 {
-      color: #004AAD;
-      border-bottom: 2px solid #e1eaf2;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .badge {
-  background: #edf4ff;
-  color: #003366;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 1rem;
-  margin: 6px;
-  display: inline-block;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-    .contact p {
-      margin: 0.5rem 0;
-    }
-    .contact i {
-      color: #004AAD;
-      margin-right: 8px;
-    }
+
     a {
-      color: #004AAD;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      color: inherit;
     }
 
-    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
-    @keyframes slideUp { from {transform: translateY(30px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
-    @keyframes zoomIn { from {transform: scale(0.95); opacity: 0;} to {transform: scale(1); opacity: 1;} }
-    @keyframes fadeLeft { from {transform: translateX(-30px); opacity: 0;} to {transform: translateX(0); opacity: 1;} }
-    @keyframes fadeRight { from {transform: translateX(30px); opacity: 0;} to {transform: translateX(0); opacity: 1;} }
+    /* NAVIGATION */
 
-    .about { animation-name: fadeIn; }
-    .experience { animation-name: slideUp; }
-    .education { animation-name: zoomIn; }
-    .skills { animation-name: fadeLeft; }
-    .projects { animation-name: fadeRight; }
-    .certifications { animation-name: zoomIn; }
-    .contact { animation-name: fadeIn; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(16, 43, 78, 0.97);
+      backdrop-filter: blur(12px);
+      padding: 15px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+    }
 
-    @media screen and (max-width: 768px) {
-      section {
-        margin: 1rem;
-        padding: 1rem;
+    .nav-logo {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .nav-logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 23px;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: #e7edf5;
+      font-size: 0.83rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+      background: linear-gradient(125deg, #102b4e 0%, #183f6a 65%, #245783 100%);
+      color: white;
+      padding: 85px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 75px;
+      min-height: 470px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 50%;
+      right: -120px;
+      top: -150px;
+    }
+
+    .hero-image {
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-image img {
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid rgba(255,255,255,0.9);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    }
+
+    .hero-content {
+      max-width: 650px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-tag {
+      color: #e3c58e;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 span {
+      color: #e3c58e;
+    }
+
+    .hero h3 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #d5e2ef;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      color: #dbe5ef;
+      font-size: 0.96rem;
+      max-width: 600px;
+      margin-bottom: 27px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #102b4e;
+    }
+
+    .btn-gold:hover {
+      background: #e0bb80;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.65);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--navy);
+    }
+
+    /* COMMON SECTION */
+
+    .section {
+      max-width: 1120px;
+      margin: 55px auto;
+      padding: 0 25px;
+      scroll-margin-top: 90px;
+    }
+
+    .section-heading {
+      margin-bottom: 27px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: 1.8rem;
+      margin-top: 5px;
+      font-weight: 800;
+    }
+
+    .section-heading h2::after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 3px;
+      background: var(--gold);
+      margin-top: 12px;
+    }
+
+    .content-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    /* ABOUT */
+
+    .about-text {
+      font-size: 0.98rem;
+      color: var(--muted);
+      text-align: justify;
+    }
+
+    .about-text strong {
+      color: var(--navy);
+    }
+
+    /* EXPERIENCE */
+
+    .timeline {
+      border-left: 2px solid #d9e3ef;
+      margin-left: 9px;
+      padding-left: 27px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: 32px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -36px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      background: var(--gold);
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px var(--gold);
+    }
+
+    .timeline-item h3 {
+      color: var(--navy);
+      font-size: 1.08rem;
+    }
+
+    .timeline-date {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.83rem;
+      margin: 5px 0 10px;
+    }
+
+    .timeline-item ul {
+      padding-left: 19px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline-item li {
+      margin-bottom: 6px;
+    }
+
+    .detail-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 24px;
+      padding: 12px 20px;
+      background: var(--navy);
+      color: white;
+      border-radius: 5px;
+      font-size: 0.87rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .detail-link:hover {
+      background: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    /* EDUCATION */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .education-card {
+      background: white;
+      padding: 23px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+    }
+
+    .education-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .education-card i {
+      color: var(--gold);
+      font-size: 1.5rem;
+      margin-bottom: 13px;
+    }
+
+    .education-card h3 {
+      color: var(--navy);
+      font-size: 1rem;
+      margin-bottom: 7px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    /* SKILLS */
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 23px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .skill-card h3 {
+      color: var(--navy);
+      font-size: 0.98rem;
+      margin-bottom: 15px;
+    }
+
+    .skill-card h3 i {
+      color: var(--gold);
+      margin-right: 9px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tags span {
+      background: #edf3fa;
+      color: #24496e;
+      padding: 7px 11px;
+      border-radius: 5px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .ai-note {
+      background: #edf3fa;
+      border-left: 3px solid var(--gold);
+      padding: 17px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* PROJECTS */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+    }
+
+    .project-card i {
+      font-size: 1.7rem;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .project-card h3 {
+      color: var(--navy);
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* CERTIFICATIONS */
+
+    .certificate-list {
+      list-style: none;
+    }
+
+    .certificate-list li {
+      padding: 14px 5px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.91rem;
+    }
+
+    .certificate-list li:last-child {
+      border-bottom: none;
+    }
+
+    .certificate-list i {
+      color: var(--gold);
+      margin-right: 12px;
+    }
+
+    .certificate-list a {
+      color: var(--blue);
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .certificate-list a:hover {
+      color: var(--gold);
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .contact-item {
+      background: white;
+      padding: 20px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: var(--shadow);
+      min-width: 0;
+    }
+
+    .contact-item > i {
+      color: var(--gold);
+      font-size: 1.25rem;
+      width: 25px;
+      text-align: center;
+    }
+
+    .contact-item div {
+      min-width: 0;
+    }
+
+    .contact-item small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .contact-item a,
+    .contact-item span {
+      color: var(--navy);
+      font-size: 0.83rem;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--navy);
+      color: #d5dfeb;
+      text-align: center;
+      padding: 27px 15px;
+      margin-top: 65px;
+      font-size: 0.82rem;
+    }
+
+    footer span {
+      color: var(--gold);
+    }
+
+    .social-links {
+      margin-bottom: 12px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      color: white;
+      margin: 0 5px;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* ANIMATION */
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-content,
+    .hero-image {
+      animation: fadeUp 0.9s ease both;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+      }
+
+      .nav-links {
+        gap: 12px 17px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 22px;
+        gap: 25px;
+      }
+
+      .hero-image img {
+        width: 165px;
+        height: 165px;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .section {
+        margin: 42px auto;
+        padding: 0 17px;
+      }
+
+      .content-card {
+        padding: 22px;
+      }
+
+      .section-heading h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
       }
     }
   </style>
 </head>
+
 <body>
+
+  <!-- NAVIGATION -->
+
   <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
+    <a href="#" class="nav-logo">NISHA<span>.</span></a>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="experience.html">Detailed Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <header>
-  <img src="MANU8567.JPG.jpeg" alt="Nisha Chauhan">
-  <h1>Nisha Chauhan</h1>
-  <p class="intro-text">Hi, I’m Nisha Chauhan – a tech-driven Field Engineer passionate about problem-solving, structured documentation, and bringing clarity to complex processes.</p>
-  <p>Field Engineer specializing in project estimation, BOQ preparation, and interdepartmental coordination.</p>
-</header>
+  <!-- HERO -->
 
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>I am a dedicated Field Engineer at RailTel currently working on Indian Railways' VSS project. I specialize in estimation, documentation, tender preparation, and technical coordination between departments.</p>
+  <header class="hero">
+
+    <div class="hero-image">
+      <img src="MANU8567.JPG.jpeg" alt="Nisha Chauhan">
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Professional Portfolio</div>
+
+      <h1>Nisha <span>Chauhan</span></h1>
+
+      <h3>Field Engineer | Project Coordination | Technical Documentation</h3>
+
+      <p>
+        A tech-driven professional with experience in project estimation,
+        BOQ preparation, tender documentation and interdepartmental
+        coordination, focused on bringing structure and clarity to
+        complex project operations.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#experience" class="btn btn-gold">
+          Explore My Work <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <a href="experience.html" class="btn btn-outline">
+          Detailed Experience
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ABOUT -->
+
+  <section class="section" id="about">
+
+    <div class="section-heading">
+      <div class="eyebrow">Introduction</div>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="content-card">
+      <p class="about-text">
+        I am a dedicated <strong>Field Engineer</strong> working on
+        the Indian Railways' Video Surveillance System (VSS) Project
+        at RailTel Corporation of India Ltd. My professional experience
+        includes project estimation, BOQ preparation, tender and
+        contractual documentation, invoice verification, project
+        reporting and coordination with technical, finance and
+        other stakeholders.
+
+        <br><br>
+
+        I am particularly interested in combining engineering knowledge,
+        digital tools and structured workflows to improve project
+        execution, documentation and operational efficiency.
+      </p>
+    </div>
+
   </section>
 
-  <section class="experience" id="experience">
-    <h2>Experience</h2>
-    <h3>RailTel Corporation of India Ltd – Field Engineer</h3>
-    <p><em>May 2024 – Present</em></p>
-<ul><li>Coordinating and compiling project-related data for the implementation of the VSS Project at A1, A, B, D and E category railway stations across four Zonal Railways, namely NR, NER, NCR & NWR across 11 states of Northern India, including coordination with contractors and field staff.</li><li>Scrutinizing contractors’ invoices and bills against applicable tender conditions, purchase orders, contractual provisions, and supporting documents; identifying discrepancies; processing bills through the ERP & BTS system; and coordinating their scrutiny by the concerned executive and finance authorities.</li><li>Assisting in the preparation and processing of contractual matters, including correspondence with contractors, examination of contractual provisions, preparation of contractual notes, extension of completion timelines, and other contract-related documentation.</li><li>Preparing project expenditure statements, quantity variation statements under the existing contract, variation proposals and fund requisition proposals for submission to Railways, assisting the finance department in matters related to project financial progress, coordinating BG related matters, handling ERP Purchase Order preparation and amendments, contract preparation.</li><li>Assisting in the preparation and processing of cost estimates, tenders and tender-related documentation for additional project works, including the implementation of the Surveillance System at New Delhi Railway Station (NDLS). Undertaking similar project coordination, contractual documentation, financial processing and related responsibilities for such additional works.</li><li>Maintaining project records, measurement sheets, BOQs, inspection and compliance reports, billing documents, and other relevant records; updating project progress trackers; and preparing periodic progress reports for review and coordination meetings.</li></ul>
-<p></p><h3>United Composheets Pvt. Ltd. – Purchase Executive</h3><p><em>Jan 2023 – Apr 2024</em></p><ul><li>Handled Sourcing, negotiation, and procurement of goods and services.</li><li>Ensured timely Deliveries</li><li>Maintain Vendor relationships and managed purchase records</li><li>Focused on cost savings, compliance, and coordination with internal teams for smooth operations.</li></ul>
+  <!-- EXPERIENCE -->
+
+  <section class="section" id="experience">
+
+    <div class="section-heading">
+      <div class="eyebrow">Professional Journey</div>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="content-card">
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>RailTel Corporation of India Ltd. – Field Engineer</h3>
+          <div class="timeline-date">May 2024 – Present</div>
+
+          <ul>
+            <li>Supporting project estimation, BOQ preparation and reporting for the Indian Railways VSS Project.</li>
+            <li>Preparing tender documentation, project expenditure statements and variation-related records.</li>
+            <li>Coordinating with technical, finance and planning teams for project-related activities.</li>
+            <li>Working with ERP systems and eOffice for project documentation and contractual processes.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>United Composheets Pvt. Ltd. – Purchase Executive</h3>
+          <div class="timeline-date">January 2023 – April 2024</div>
+
+          <ul>
+            <li>Managed procurement activities, vendor coordination and purchase documentation.</li>
+            <li>Coordinated with internal departments to support timely delivery and procurement compliance.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <a href="experience.html" class="detail-link">
+        View Detailed Experience <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
   </section>
 
-  <section class="education" id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech (ECE)</strong> – Inderprastha Engineering College, AKTU | CGPA: 8.70 | 2018–2022</li>
-      <li><strong>12th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | 92%</li>
-      <li><strong>10th CBSE</strong> – Shri Thakurdwara Balika Vidyalaya, Ghaziabad | CGPA: 10.0</li>
-    </ul>
+  <!-- EDUCATION -->
+
+  <section class="section" id="education">
+
+    <div class="section-heading">
+      <div class="eyebrow">Academic Background</div>
+      <h2>Education</h2>
+    </div>
+
+    <div class="education-grid">
+
+      <div class="education-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>B.Tech – Electronics & Communication Engineering</h3>
+        <p>Inderprastha Engineering College, AKTU</p>
+        <p><strong>CGPA: 8.70</strong> | 2018–2022</p>
+      </div>
+
+      <div class="education-card">
+        <i class="fas fa-school"></i>
+        <h3>Senior Secondary (12th – CBSE)</h3>
+        <p>Shri Thakurdwara Balika Vidyalaya, Ghaziabad</p>
+        <p><strong>Percentage: 92%</strong></p>
+      </div>
+
+      <div class="education-card">
+        <i class="fas fa-book-open"></i>
+        <h3>Secondary (10th – CBSE)</h3>
+        <p>Shri Thakurdwara Balika Vidyalaya, Ghaziabad</p>
+        <p><strong>CGPA: 10.0</strong></p>
+      </div>
+
+    </div>
   </section>
 
-  <section class="skills" id="skills">
-  <h2>Skills</h2>
-  <div class="badge">MS Excel</div>
-  <div class="badge">Google Workspace</div>
-  <div class="badge">HTML</div>
-  <div class="badge">Eoffice</div>
-  <div class="badge">ERP</div>
-  <div class="badge">Verilog</div>
-  <div class="badge">Python (Basic)</div>
-  <div class="badge">Xilinx ISE</div>
-  <div class="badge">AI Tools: ChatGPT, Grok, Claude, NotebookLM</div>
-  <div class="badge">AI Workflow Automation</div>
-  <div class="badge">Digital Communication</div>
-  <div class="badge">Content Planning & Promotion</div>
-  <p style="margin-top:1rem; font-size:0.95rem; text-align: justify;">
-    Experienced in utilizing AI tools like ChatGPT, Grok, Claude, and NotebookLM to automate and streamline tasks such as content drafting, document formatting, and project communication.
-  </p>
-</section>
+  <!-- SKILLS -->
 
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <h3>Underground Cable Fault Detector</h3>
-    <p>Arduino & GSM-based fault detection system using Ohm’s Law to identify and notify underground cable faults.</p>
-    <h3>Sign-Bit Calculator</h3>
-    <p>Verilog HDL project to perform 8-bit arithmetic operations on Xilinx ISE.</p>
+  <section class="section" id="skills">
+
+    <div class="section-heading">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Technical & Professional Skills</h2>
+    </div>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <h3><i class="fas fa-briefcase"></i> Project & Management</h3>
+        <div class="skill-tags">
+          <span>BOQ & Estimation</span>
+          <span>MIS & Reporting</span>
+          <span>Budget Tracking</span>
+          <span>Invoice Verification</span>
+          <span>Tender Documentation</span>
+          <span>Vendor Coordination</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-network-wired"></i> Technical Knowledge</h3>
+        <div class="skill-tags">
+          <span>IP-Based VSS</span>
+          <span>LAN / WAN</span>
+          <span>OFC Awareness</span>
+          <span>Digital Communication</span>
+          <span>HTML</span>
+          <span>Verilog</span>
+          <span>Python (Basic)</span>
+          <span>Xilinx ISE</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-laptop"></i> Digital Productivity</h3>
+        <div class="skill-tags">
+          <span>MS Excel</span>
+          <span>MS Office</span>
+          <span>Google Workspace</span>
+          <span>Zoho Collaboration Apps</span>
+          <span>ERP</span>
+          <span>eOffice</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-robot"></i> AI & Digital Tools</h3>
+        <div class="skill-tags">
+          <span>ChatGPT</span>
+          <span>Grok</span>
+          <span>Claude</span>
+          <span>NotebookLM</span>
+          <span>AI Workflow Automation</span>
+          <span>Content Planning & Promotion</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ai-note">
+      <strong>AI-Enabled Workflows:</strong>
+      Experienced in utilizing AI tools for content drafting,
+      document formatting, information organisation and
+      streamlining project communication.
+    </div>
+
   </section>
 
-  <section class="certifications" id="certifications">
-    <h2>Certifications & Achievements</h2>
-    <ul>
-      <li><a href="Certificate of Attendance (52)_NISHA.pdf" target="_blank">HDL & Schematic Design – PinE Training Academy</a></li>
-      <li><a href="Certification in Networking Essentials .pdf" target="_blank">Networking Essentials – Cisco Networking Academy</a></li>
-      <li><a href="Skill Enhancement Program.pdf" target="_blank">Skill Enhancement Program – Digital System Design</a></li>
-      <li><a href="Paper Presentation.pdf" target="_blank">Paper Presentation – Flexible & Organic Electronics</a></li>
-      <li><a href="https://www.credly.com/badges/9df6cbcd-7720-4ceb-9c68-daaef68623b4" target="_blank">Microsoft Azure Fundamentals (Credly)</a></li>
-      <li><a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd0997567858" target="_blank">AI Tools Workshop – CertX</a></li>
-    </ul>
+  <!-- PROJECTS -->
+
+  <section class="section" id="projects">
+
+    <div class="section-heading">
+      <div class="eyebrow">Academic Work</div>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <i class="fas fa-bolt"></i>
+        <h3>Underground Cable Fault Detector</h3>
+        <p>
+          Arduino and GSM-based fault detection system using
+          Ohm's Law to identify underground cable faults
+          and communicate fault notifications.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-microchip"></i>
+        <h3>Sign-Bit Calculator</h3>
+        <p>
+          A Verilog HDL-based project designed to perform
+          8-bit arithmetic operations using Xilinx ISE.
+        </p>
+      </div>
+
+    </div>
+
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:missnishachauhan11@gmail.com">missnishachauhan11@gmail.com</a></p>
-    <p><i class="fas fa-phone"></i> +91 8447262329</p>
-    <p><i class="fas fa-map-marker-alt"></i> Ghaziabad, Uttar Pradesh</p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8" target="_blank">LinkedIn Profile</a></p>
+  <!-- CERTIFICATIONS -->
+
+  <section class="section" id="certifications">
+
+    <div class="section-heading">
+      <div class="eyebrow">Professional Development</div>
+      <h2>Certifications & Achievements</h2>
+    </div>
+
+    <div class="content-card">
+
+      <ul class="certificate-list">
+
+        <li>
+          <i class="fas fa-file-pdf"></i>
+          <a href="Certificate of Attendance (52)_NISHA.pdf" target="_blank" rel="noopener">
+            HDL & Schematic Design – PinE Training Academy
+          </a>
+        </li>
+
+        <li>
+          <i class="fas fa-file-pdf"></i>
+          <a href="Certification in Networking Essentials .pdf" target="_blank" rel="noopener">
+            Networking Essentials – Cisco Networking Academy
+          </a>
+        </li>
+
+        <li>
+          <i class="fas fa-file-pdf"></i>
+          <a href="Skill Enhancement Program.pdf" target="_blank" rel="noopener">
+            Skill Enhancement Program – Digital System Design
+          </a>
+        </li>
+
+        <li>
+          <i class="fas fa-file-pdf"></i>
+          <a href="Paper Presentation.pdf" target="_blank" rel="noopener">
+            Paper Presentation – Flexible & Organic Electronics
+          </a>
+        </li>
+
+        <li>
+          <i class="fas fa-certificate"></i>
+          <a href="https://www.credly.com/badges/9df6cbcd-7720-4ceb-9c68-daaef68623b4" target="_blank" rel="noopener">
+            Microsoft Azure Fundamentals – Credly
+          </a>
+        </li>
+
+        <li>
+          <i class="fas fa-certificate"></i>
+          <a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd0997567858" target="_blank" rel="noopener">
+            AI Tools Workshop – CertX
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
   </section>
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact">
+
+    <div class="section-heading">
+      <div class="eyebrow">Let's Connect</div>
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <small>Email</small>
+          <a href="mailto:missnishachauhan11@gmail.com">
+            missnishachauhan11@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <small>Phone</small>
+          <a href="tel:+918447262329">+91 8447262329</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-location-dot"></i>
+        <div>
+          <small>Location</small>
+          <span>Ghaziabad, Uttar Pradesh</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <div>
+          <small>LinkedIn</small>
+          <a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8"
+             target="_blank" rel="noopener">
+            View LinkedIn Profile
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="social-links">
+      <a href="mailto:missnishachauhan11@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/nisha-chauhan-77377b1a8"
+         target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <p>Designed & Developed by <span>Nisha Chauhan</span></p>
+    <p>© 2026 | Professional Portfolio</p>
+
+  </footer>
+
 </body>
 </html>
